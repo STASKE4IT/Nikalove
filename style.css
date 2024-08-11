@@ -1,0 +1,130 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url("./img/background.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+h1,
+p,
+span {
+  font-family: "Dancing Script", cursive; /* Применение шрифта Dancing Script */
+}
+
+.screen1,
+.screen2,
+.screen3 {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.message {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  max-width: 800px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: #ff69b4;
+  font-size: 36px;
+  margin: 0 0 15px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.btn1,
+.btn2 {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn1 img,
+.btn2 img {
+  width: 200px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.btn1:hover img,
+.btn2:hover img {
+  transform: scale(1.1);
+}
+
+.loveu {
+  font-size: 20px;
+  line-height: 1.6;
+  margin: 10px 0;
+  color: #ff69b4; /* Можно добавить цвет для текста */
+}
+
+.slider {
+  position: relative;
+  width: 400px;
+  height: 500px;
+  max-width: 600px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+  width: 600px;
+  height: 700px;
+}
+.slid7 {
+  width: 400px;
+  height: 200px;
+}
+
+button.prev,
+button.next {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+}
+
+button.prev {
+  left: 10px;
+}
+
+button.next {
+  right: 10px;
+}
+
+button.prev:hover,
+button.next:hover {
+  background: rgba(
+    0,
+    0,
+    0,
+    0.7
+  ); /* Сделать кнопки немного светлее при наведении */
+}
